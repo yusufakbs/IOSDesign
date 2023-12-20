@@ -13,6 +13,7 @@
 		40709E672B32E890006193B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40709E652B32E890006193B8 /* Main.storyboard */; };
 		40709E692B32E891006193B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40709E682B32E891006193B8 /* Assets.xcassets */; };
 		40709E6C2B32E891006193B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40709E6A2B32E891006193B8 /* LaunchScreen.storyboard */; };
+		4074C2252B33998700DB6B28 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4074C2242B33998700DB6B28 /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		40709E682B32E891006193B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40709E6B2B32E891006193B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40709E6D2B32E891006193B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4074C2242B33998700DB6B28 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		4074C2262B33A54500DB6B28 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
+		4074C2272B33A54500DB6B28 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,21 @@
 				40709E5F2B32E890006193B8 /* AppDelegate.swift */,
 				40709E612B32E890006193B8 /* SceneDelegate.swift */,
 				40709E632B32E890006193B8 /* ViewController.swift */,
+				4074C2232B33996600DB6B28 /* Fonts */,
 				40709E652B32E890006193B8 /* Main.storyboard */,
 				40709E682B32E891006193B8 /* Assets.xcassets */,
 				40709E6A2B32E891006193B8 /* LaunchScreen.storyboard */,
 				40709E6D2B32E891006193B8 /* Info.plist */,
 			);
 			path = iOSDesign;
+			sourceTree = "<group>";
+		};
+		4074C2232B33996600DB6B28 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4074C2242B33998700DB6B28 /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +122,7 @@
 			knownRegions = (
 				en,
 				Base,
+				tr,
 			);
 			mainGroup = 40709E532B32E890006193B8;
 			productRefGroup = 40709E5D2B32E890006193B8 /* Products */;
@@ -126,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40709E6C2B32E891006193B8 /* LaunchScreen.storyboard in Resources */,
+				4074C2252B33998700DB6B28 /* Pacifico-Regular.ttf in Resources */,
 				40709E692B32E891006193B8 /* Assets.xcassets in Resources */,
 				40709E672B32E890006193B8 /* Main.storyboard in Resources */,
 			);
@@ -151,6 +166,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				40709E662B32E890006193B8 /* Base */,
+				4074C2262B33A54500DB6B28 /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -159,6 +175,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				40709E6B2B32E891006193B8 /* Base */,
+				4074C2272B33A54500DB6B28 /* tr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -171,6 +188,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -234,6 +252,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -295,6 +314,7 @@
 				DEVELOPMENT_TEAM = 3Q3DUU9XD7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSDesign/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pizza;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,6 +343,7 @@
 				DEVELOPMENT_TEAM = 3Q3DUU9XD7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSDesign/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Pizza;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

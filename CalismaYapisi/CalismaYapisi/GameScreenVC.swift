@@ -8,11 +8,20 @@
 import UIKit
 
 class GameScreenVC: UIViewController {
+    
+    var kisi:Kisiler?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if let m = kisi {
+            print("-----OyunEkrani----")
+            print("Kisi ad: \(m.ad!)")
+            print("Kisi yaş: \(m.yas!)")
+            print("Kisi boy: \(m.boy!)")
+            print("Kisi bekar: \(m.bekar!)")
+        }
+        
     }
     
     @IBAction func buttonBack(_ sender: Any) {

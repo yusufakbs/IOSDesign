@@ -52,6 +52,18 @@
                     </view>
                     <navigationItem key="navigationItem" title="Ana Sayfa" prompt="Açıklama" id="buR-Rj-gOd">
                         <barButtonItem key="backBarButtonItem" title="Geri" id="1KI-yn-nrQ"/>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="vHa-m0-uT2">
+                                <connections>
+                                    <action selector="buttonAdd:" destination="BYZ-38-t0r" id="wyl-Vo-4J3"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="save" id="mOt-I8-Ww8">
+                                <connections>
+                                    <action selector="buttonSave:" destination="BYZ-38-t0r" id="9Bp-Ii-PBY"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="labelHomePage" destination="d7k-9e-xCw" id="ATe-tU-MKJ"/>

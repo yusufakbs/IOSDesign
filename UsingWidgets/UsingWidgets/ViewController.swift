@@ -12,17 +12,23 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var labelSonuc: UILabel!
     @IBOutlet weak var textFieldGirdi: UITextField!
-    
-    
     @IBOutlet weak var mySwitch: UISwitch!
-    
     @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var labelSlider: UILabel!
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var labelStepper: UILabel!
+    
+    @IBOutlet weak var stepper: UIStepper!
+    
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        labelSlider.text = String(Int(slider.value))
+        labelStepper.text = String(Int(stepper.value))
+        indicator.isHidden = true
     }
 
 
@@ -52,6 +58,9 @@ class ViewController: UIViewController {
         let secilenKategori = segmentedControl.titleForSegment(at: secilenIndeks)
         print("Seçim : \(secilenKategori!)")
         
+        print("Slider değeri : \(String(Int(slider.value)))")
+        print("Slider değeri : \(stepper.value)")
+        
     }
     
     
@@ -71,6 +80,29 @@ class ViewController: UIViewController {
         let secilenKategori = sender.titleForSegment(at: secilenIndeks)
         print("Seçim : \(secilenKategori!)")
         
+    }
+    
+    
+    @IBAction func sliderDegisim(_ sender: UISlider) {
+        labelSlider.text = String(Int(sender.value))
+    }
+    
+    
+    @IBAction func stepperDegisim(_ sender: UIStepper) {
+        labelStepper.text = String(Int(sender.value))
+    }
+    
+    
+    
+    @IBAction func butonStart(_ sender: Any) {
+        indicator.isHidden = false
+        indicator.startAnimating()
+    }
+    
+    
+    @IBAction func buttonEnd(_ sender: Any) {
+        indicator.isHidden = true
+        indicator.stopAnimating()
     }
     
     
